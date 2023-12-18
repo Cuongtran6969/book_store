@@ -1,0 +1,32 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuongtran6969/book_store.git"
+  },
+  "keywords": [
+    "book",
+    "store",
+    "book",
+    "store"
+  ],
+  "author": "cuongtvc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cuongtran6969/book_store/issues"
+  },
+  "homepage": "https://github.com/Cuongtran6969/book_store#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
