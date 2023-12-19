@@ -1,5 +1,139 @@
 @import 'variables';
 
-h1 {
-    color: $red-color;
+.leftnav,
+.rightnav {
+    background-color: $nav-bg;
+    // height: 100vh;
+}
+
+.content {
+    background-color: $middle-bg;
+
+    .box-search {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        .form-control,
+        .input-group-text {
+            border: none;
+            background-color: $site-bg;
+            box-shadow: none !important;
+            color: #bdb9d8;
+        }
+
+        .form-control::placeholder {
+            color: #bdb9d8;
+            font-size: 14px;
+            opacity: 1;
+        }
+
+    }
+
+    .banner {
+        background-color: $site-bg;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        p {
+            color: #bdb9d8;
+        }
+
+        .addBtn,
+        .buyBtn {
+            color: $white-color;
+            background-color: $btnBuy-bg;
+            min-width: 120px;
+            font-size: 14px;
+        }
+
+        .addBtn {
+            border: none;
+        }
+
+        .buyBtn {
+            border: 1px solid $border-color;
+            background-color: transparent;
+        }
+
+        .banner-img {
+            width: 100%;
+        }
+    }
+
+    .categories {
+        .categories-title {
+            color: #bdb9d8;
+        }
+
+        .cat-filter {
+
+            select {
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #bdb9d8;
+
+                option {
+                    background: #252a4a;
+                    color: $white-color;
+                }
+            }
+
+        }
+
+
+        .list-trend {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: auto;
+            scroll-behavior: smooth;
+            transition: 1s linear;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .trend-item {
+                min-width: calc(50% - 10px);
+                margin-right: 10px;
+
+                img {
+                    width: 30%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .trend-content {
+                    h4 {
+                        color: $white-color;
+                    }
+
+                    .trend-des,
+                    .number-rate {
+                        color: #bdb9d8;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.leftnav {
+    li {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+
+        &:hover {
+            background-color: $middle-bg;
+        }
+    }
+
+    span {
+        color: #aca8dc;
+    }
+
+    i {
+        color: #322b69;
+    }
 }

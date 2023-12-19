@@ -2,7 +2,7 @@ class SiteController {
 
     //[get] courses
     index(req, res) {
-        res.send('Site');
+        res.render('home');
     }
 
     //[get] search

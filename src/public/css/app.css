@@ -1,2 +1,79 @@
-h1 {
-  color: green; }
+.leftnav,
+.rightnav {
+  background-color: #1d213e; }
+
+.content {
+  background-color: #252a4a; }
+  .content .box-search {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; }
+    .content .box-search .form-control,
+    .content .box-search .input-group-text {
+      border: none;
+      background-color: #2b315e;
+      box-shadow: none !important;
+      color: #bdb9d8; }
+    .content .box-search .form-control::placeholder {
+      color: #bdb9d8;
+      font-size: 14px;
+      opacity: 1; }
+  .content .banner {
+    background-color: #2b315e;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; }
+    .content .banner p {
+      color: #bdb9d8; }
+    .content .banner .addBtn,
+    .content .banner .buyBtn {
+      color: #fff;
+      background-color: #383f75;
+      min-width: 120px;
+      font-size: 14px; }
+    .content .banner .addBtn {
+      border: none; }
+    .content .banner .buyBtn {
+      border: 1px solid #454b74;
+      background-color: transparent; }
+    .content .banner .banner-img {
+      width: 100%; }
+  .content .categories .categories-title {
+    color: #bdb9d8; }
+  .content .categories .cat-filter select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #bdb9d8; }
+    .content .categories .cat-filter select option {
+      background: #252a4a;
+      color: #fff; }
+  .content .categories .list-trend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear; }
+    .content .categories .list-trend::-webkit-scrollbar {
+      display: none; }
+    .content .categories .list-trend .trend-item {
+      min-width: calc(50% - 10px);
+      margin-right: 10px; }
+      .content .categories .list-trend .trend-item img {
+        width: 30%;
+        height: 200px;
+        object-fit: cover; }
+      .content .categories .list-trend .trend-item .trend-content h4 {
+        color: #fff; }
+      .content .categories .list-trend .trend-item .trend-content .trend-des,
+      .content .categories .list-trend .trend-item .trend-content .number-rate {
+        color: #bdb9d8; }
+
+.leftnav li {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; }
+  .leftnav li:hover {
+    background-color: #252a4a; }
+
+.leftnav span {
+  color: #aca8dc; }
+
+.leftnav i {
+  color: #322b69; }
