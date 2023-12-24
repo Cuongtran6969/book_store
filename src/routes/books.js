@@ -3,9 +3,9 @@ const router = express.Router();
 
 const booksController = require('../app/controller/BooksController')
 
-router.use('/:slug', booksController.show);
+router.get('/:slug', booksController.show);
 
-router.use('/', booksController.index);
+router.get('/', booksController.index);
 
 
 module.exports = router

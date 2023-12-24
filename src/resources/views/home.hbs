@@ -35,11 +35,12 @@
         </div>
         <div class="position-relative">
             <div class="list-trend">
+                {{#each booksData}}
                 <div class="trend-item d-flex align-items-center">
-                    <img src="https://m.media-amazon.com/images/I/61wGEmQTi1L._SY466_.jpg" alt="">
+                    <img src="{{this.poster}}" alt="">
                     <div class="trend-content ms-4">
-                        <h4 class="">The Boy, the Bird and the Coffin</h4>
-                        <p class="trend-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente officia
+                        <h4 class="">{{this.title}}</h4>
+                        <p class="trend-des">{{this.description}}
                         </p>
                         <div class="d-flex align-items-center">
                             <div class="">
@@ -48,11 +49,11 @@
                                 <i class='bx bxs-star text-warning'></i>
                                 <i class='bx bxs-star text-warning'></i>
                             </div>
-                            <span class="ms-2 number-rate">(26)</span>
+                            <span class="ms-2 number-rate">({{this.numberRating}})</span>
                         </div>
                     </div>
                 </div>
-                <div class="trend-item d-flex align-items-center">
+                {{!-- <div class="trend-item d-flex align-items-center">
                     <img src="https://i.pinimg.com/736x/c1/0d/32/c10d3284c13ebc33035a7d591551dc0d.jpg" alt="">
                     <div class="trend-content ms-4">
                         <h4 class="">The Boy, the Bird and the Coffin</h4>
@@ -102,7 +103,8 @@
                             <span class="ms-2 number-rate">(26)</span>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                {{/each}}
             </div>
             <div class="box-direct d-flex align-items-center position-absolute end-0">
                 <div class="left-direct">
@@ -114,7 +116,6 @@
             </div>
         </div>
     </div>
-
     <div class="topwriter mt-5">
         <div class="">
             <div class="row text-white align-items-center">
@@ -139,7 +140,8 @@
                 </div>
             </div>
             <div class="">
-                <div class="row designer-item align-items-center mt-4 active">
+                {{#each authorsData}}
+                {{!-- <div class="row designer-item align-items-center mt-4 active">
                     <div class="col-md-4">
                         <div class="row align-items-center">
                             <div class="col-md-4">
@@ -179,13 +181,12 @@
                     <div class="col-md-1 text-center designer-more_option">
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </div>
-                </div>
+                </div> --}}
                 <div class="row designer-item align-items-center mt-4">
                     <div class="col-md-4">
                         <div class="row align-items-center">
                             <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="">
+                                <img src="{{this.image}}" alt="">
                             </div>
                             <div class="col-md-8">
                                 <span class="designer-des">How to learn ux design.</span>
@@ -194,8 +195,8 @@
                     </div>
                     <div class="col-md-2">
                         <div class="">
-                            <h5 class="designer-name">Alex Damson</h5>
-                            <span class="designer-pos">Ui/Ux designer</span>
+                            <h5 class="designer-name">{{this.name}}</h5>
+                            <span class="designer-pos">{{this.job}}</span>
                         </div>
                     </div>
                     <div class="col-md-2 designer-rate">
@@ -210,8 +211,12 @@
                     </div>
                     <div class="col-md-1">
                         <div class="designer-social d-flex align-items-center">
-                            <i class='bx bxl-twitter'></i>
-                            <i class='bx bxl-linkedin ms-2'></i>
+                            <a href="{{this.socials.twitter}}">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="{{this.socials.linkedin}}">
+                                <i class='bx bxl-linkedin ms-2'></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
@@ -221,7 +226,7 @@
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </div>
                 </div>
-                <div class="row designer-item align-items-center mt-4">
+                {{!-- <div class="row designer-item align-items-center mt-4">
                     <div class="col-md-4">
                         <div class="row align-items-center">
                             <div class="col-md-4">
@@ -261,7 +266,8 @@
                     <div class="col-md-1 text-center designer-more_option">
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </div>
-                </div>
+                </div> --}}
+                {{/each}}
             </div>
         </div>
     </div>

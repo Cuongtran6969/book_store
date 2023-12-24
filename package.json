@@ -26,7 +26,8 @@
   "homepage": "https://github.com/Cuongtran6969/book_store#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^7.1.2"
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.0.3"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

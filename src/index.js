@@ -8,6 +8,9 @@ const exp = require('constants');
 const app = express()
 const port = 3000
 
+const db = require('./config/db')
+//connect db
+db.connect()
 const route = require('./routes')
 //khai bao de su dung post from form
 app.use(express.urlencoded({
@@ -22,7 +25,7 @@ app.engine('.hbs', engine({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
 
 //path engine
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources', 'views'));
 
 route(app);
 
