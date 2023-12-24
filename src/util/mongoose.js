@@ -4,6 +4,6 @@ module.exports = {
     },
 
     mongooseToObject: function (mongooses) {
-        return mongoose.toObject()
+        return mongooses.toObject()
     }
 }

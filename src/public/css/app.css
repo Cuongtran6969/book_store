@@ -81,18 +81,22 @@ html {
     .content .categories .list-trend .trend-item {
       min-width: calc(50% - 10px);
       margin-right: 10px; }
-      .content .categories .list-trend .trend-item img {
-        width: 30%;
-        height: 200px;
-        object-fit: cover; }
-      .content .categories .list-trend .trend-item .trend-content h4 {
-        font-size: 18px;
-        color: #fff; }
-      .content .categories .list-trend .trend-item .trend-content .trend-des,
-      .content .categories .list-trend .trend-item .trend-content .number-rate {
-        color: #bdb9d8; }
-      .content .categories .list-trend .trend-item .trend-content .trend-des {
-        font-size: 14px; }
+      .content .categories .list-trend .trend-item .trend-link {
+        width: 30%; }
+        .content .categories .list-trend .trend-item .trend-link img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover; }
+      .content .categories .list-trend .trend-item .trend-content {
+        width: 100%; }
+        .content .categories .list-trend .trend-item .trend-content h4 {
+          font-size: 18px;
+          color: #fff; }
+        .content .categories .list-trend .trend-item .trend-content .trend-des,
+        .content .categories .list-trend .trend-item .trend-content .number-rate {
+          color: #bdb9d8; }
+        .content .categories .list-trend .trend-item .trend-content .trend-des {
+          font-size: 14px; }
   .content .categories .box-direct {
     top: 100%; }
     .content .categories .box-direct .left-direct,

@@ -1,26 +1,24 @@
 <div class="book-detail p-5">
     <div class="text-center" style="width: 100%;">
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/10dNaSlsAcA?si=_on21yBcq1mCbn-3"
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/{{book.videoURL}}?si=_on21yBcq1mCbn-3"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     </div>
 
-
     <div class="mt-5">
         <div class="row">
             <div class="col-3">
-                <img style="width: 100%;" src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Conan-Movie-26.jpg"
-                    alt="">
+                <img style="width: 100%;" src="{{book.poster}}" alt="">
             </div>
             <div class="col-9">
-                <h4 class="text-white mt-4">Title: The Birth of the Clinic</h4>
-                <p class="text-white-50">The loai: Kich tinh</p>
+                <h4 class="text-white mt-4">{{book.title}}</h4>
+                <p class="text-white-50">The loai: {{book.type}}</p>
                 <div class="book-info">
                     <div class="row text-white-50">
-                        <div class="col-3">110 phut</div>
-                        <div class="col-3">Japan</div>
-                        <div class="col-3">223 views</div>
+                        <div class="col-3">{{book.time}} phut</div>
+                        <div class="col-3">{{book.language}}</div>
+                        <div class="col-3">{{book.views}} views</div>
                     </div>
                 </div>
                 <p class="text-white-50 mt-4"> 26Nov. 29, 2023</p>
