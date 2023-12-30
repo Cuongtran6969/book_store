@@ -294,6 +294,16 @@ body {}
             }
         }
     }
+
+
+    //list-book
+    .list-book {
+        img {
+            width: 60%;
+            height: 120px;
+            object-fit: cover;
+        }
+    }
 }
 
 
@@ -535,5 +545,12 @@ body {}
 .book-detail {
     .book-info {
         width: 80%;
+    }
+}
+
+.boxImg-input {
+    img {
+        width: 100%;
+        height: 400px;
     }
 }

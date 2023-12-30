@@ -1,0 +1,29 @@
+<div class="py-5 px-3 list-book">
+    <div class="text-white ">
+        <div class="row border py-3 rounded-3">
+            <div class="col-md-2 fw-bold fs-5">Poster</div>
+            <div class="col-md-2 fw-bold fs-5">Title</div>
+            <div class="col-md-2 fw-bold fs-5">Type</div>
+            <div class="col-md-2 fw-bold fs-5">Views</div>
+            <div class="col-md-2 fw-bold fs-5">Language</div>
+            <div class="col-md-1 fw-bold fs-5"></div>
+            <div class="col-md-1 fw-bold fs-5"></div>
+        </div>
+        <div class="row">
+            {{#each books}}
+            <div class="col-12">
+                <div class="row py-3 align-items-center">
+                    <div class="col-md-2"><img src="{{this.poster}}" alt="">
+                    </div>
+                    <div class="col-md-2">{{this.title}}</div>
+                    <div class="col-md-2">{{this.type}}</div>
+                    <div class="col-md-2">{{this.views}}</div>
+                    <div class="col-md-2">{{this.language}}</div>
+                    <div class="col-md-1">Edit</div>
+                    <div class="col-md-1"><a href="" class="text-danger">Delete</a></div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-
+var slug = require('mongoose-slug-updater');
+mongoose.plugin(slug);
 const Schema = mongoose.Schema;
 
 const Book = new Schema({
@@ -12,6 +13,9 @@ const Book = new Schema({
     title: String,
     videoURL: String,
     views: Number,
-    language: String
+    language: String,
+    slug: { type: String, slug: "title", unique: true }
+}, {
+    timestamps: true,
 });
 module.exports = mongoose.model('Book', Book)
